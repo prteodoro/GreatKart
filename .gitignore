@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/django
 # Edit at https://www.toptal.com/developers/gitignore?templates=django
 
+# APP PASSWORD GMAIL
+# EMAIL_HOST_USER = 'email.test202408@gmail.com'
+# EMAIL_HOST_PASSWORD = 'dxqv emxv jxbf gbjf'
+
 ### Django ###
 *.log
 *.pot

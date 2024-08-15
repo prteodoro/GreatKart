@@ -141,10 +141,12 @@ MESSAGE_TAGS = {
 
 
 # SMTP configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ascendente905@gmail.com'
-EMAIL_HOST_PASSWORD = '123456'
+DEFAULT_FROM_EMAIL = 'GREAT KART'
+EMAIL_HOST_USER = 'email.test202408@gmail.com'
+EMAIL_HOST_PASSWORD = 'APP PASSWORD'
 EMAIL_USE_TLS = True
 
 # Default primary key field type
