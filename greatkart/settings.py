@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-kc$kltm&2&2#_s0yt=-nm$f2cca&*h4!%np%)-*uek8&sjbn8^
 DEBUG = True
 
 ALLOWED_HOSTS = []
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 
 
 # Application definition
