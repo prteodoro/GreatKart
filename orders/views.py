@@ -5,6 +5,7 @@ from .forms import OrderForm
 from .models import Order, Payment, OrderProduct
 import datetime
 import json
+from store.models import Product
 
 # Create your views here.
 
@@ -48,8 +49,12 @@ def payments(request):
 
 
     # Reduce the quantity of the sold products
+        product = Product.objects.get(id=item.product_id)
+        product.stock -= item.quantity
+        product.save()
 
     # Clear cart
+    CartItem.objects.filter(user=request.user).delete()
 
     # Send order recieved email to customer
 
@@ -65,7 +70,7 @@ def place_order(request, total=0, quantity=0):
     cart_items = CartItem.objects.filter(user=current_user)
     cart_count = cart_items.count()
     if cart_count <= 0:
-        return redirect('store')
+        return redirect('store:store')
 
     grand_total = 0
     tax = 0
