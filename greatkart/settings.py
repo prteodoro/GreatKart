@@ -148,7 +148,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = 'GREAT KART'
 EMAIL_HOST_USER = 'email.test202408@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = 'dxqv emxv jxbf gbjf'
 EMAIL_USE_TLS = True
 
 # Default primary key field type
