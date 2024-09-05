@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['greatkart-firstdeploy-env.eba-9eruvwhs.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['greatkart-deploy01-env.eba-ppyb4psy.us-west-2.elasticbeanstalk.com']
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 
 
